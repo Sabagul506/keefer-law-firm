@@ -1,0 +1,1245 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #333;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.page {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100vh;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.7);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 28px;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.93),
+            rgba(255,255,255,0.93)
+        );
+}
+
+
+.logo {
+    width: 531px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.office {
+    text-align: right;
+    padding-right: 4px;
+}
+
+
+.office h3 {
+    color: #8d1111;
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 19px;
+    letter-spacing: 1.2px;
+
+    margin-bottom: 2px;
+}
+
+
+.office h1 {
+    color: #222;
+
+    font-size: 34px;
+    line-height: 35px;
+
+    letter-spacing: 1px;
+}
+
+
+.office p {
+    color: #222;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-top: 2px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+    height: 40px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+
+    padding-right: 18px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #a90000 0%,
+            #860000 50%,
+            #6b0000 100%
+        );
+}
+
+
+.navbar a {
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    padding: 0 13px;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.2s;
+}
+
+
+.navbar a:hover {
+    background: #666;
+}
+
+
+.navbar a.active {
+    background: #777;
+}
+
+
+/* =========================================
+   TOP BANNERS
+========================================= */
+
+.top-banners {
+    display: grid;
+
+    grid-template-columns: 1.15fr 1fr;
+
+    gap: 14px;
+
+    padding: 24px 25px 20px;
+}
+
+
+/* =========================================
+   LEFT BANNER
+========================================= */
+
+.banner-left {
+    width: 100%;
+    height: 290px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 2px 7px rgba(0,0,0,0.35);
+}
+
+
+.banner-left img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   QUESTION BOX
+========================================= */
+
+.question {
+    height: 290px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 2px 7px rgba(0,0,0,0.35);
+}
+
+
+.question-bg {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    left: 0;
+    top: 0;
+
+    object-fit: cover;
+}
+
+
+.question-content {
+    position: relative;
+
+    z-index: 2;
+
+    height: 100%;
+}
+
+
+.question-title {
+    width: 145px;
+
+    background:
+        linear-gradient(
+            #9e0000,
+            #700000
+        );
+
+    color: #fff;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    padding: 4px 8px;
+}
+
+
+.question-heading {
+    padding: 2px 18px 0 170px;
+}
+
+
+.question-heading h2 {
+    color: #222;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    line-height: 19px;
+}
+
+
+.question-heading h2 span {
+    color: #8d1111;
+}
+
+
+.question-heading p {
+    font-size: 12px;
+
+    line-height: 15px;
+
+    margin-top: 6px;
+}
+
+
+.question form {
+    position: absolute;
+
+    left: 18px;
+    right: 18px;
+    top: 100px;
+}
+
+
+.form-row {
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 4px;
+}
+
+
+.form-row label {
+    width: 48px;
+
+    font-size: 9px;
+    font-weight: bold;
+}
+
+
+.form-row input {
+    width: 145px;
+    height: 19px;
+
+    border: 1px solid #999;
+
+    background: rgba(255,255,255,0.95);
+}
+
+
+.question textarea {
+    width: 100%;
+    height: 55px;
+
+    margin-top: 8px;
+
+    padding: 7px;
+
+    border: 1px solid #999;
+
+    resize: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    background: rgba(255,255,255,0.95);
+}
+
+
+.form-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 9px;
+}
+
+
+.form-bottom span {
+    color: #666;
+
+    font-family: Georgia, serif;
+
+    font-size: 10px;
+
+    font-style: italic;
+}
+
+
+.form-bottom button {
+    border: 0;
+
+    background:
+        linear-gradient(
+            #d00000,
+            #9c0000
+        );
+
+    color: #fff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    padding: 8px 12px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 2px 4px rgba(0,0,0,0.4);
+}
+
+
+.confidential {
+    position: absolute;
+
+    width: 135px;
+
+    height: auto;
+
+    right: 12px;
+    top: 100px;
+
+    transform: rotate(8deg);
+
+    z-index: 3;
+}
+
+
+/* =========================================
+   THREE COLUMN AREA
+========================================= */
+
+.three-columns {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1.3fr
+        1fr;
+
+    margin: 12px 25px 0;
+
+    min-height: 210px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* =========================================
+   COMMON HEADINGS
+========================================= */
+
+.three-columns h2 {
+    color: #444;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 19px;
+
+    line-height: 21px;
+}
+
+
+.three-columns h2 span {
+    color: #8d1111;
+}
+
+
+/* =========================================
+   DUI BOX
+========================================= */
+
+.dui-box {
+    padding: 5px 18px 10px 18px;
+
+    position: relative;
+}
+
+
+.dui-box h3 {
+    color: #8d1111;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 13px;
+
+    margin-top: 6px;
+}
+
+
+.dui-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 8px;
+}
+
+
+.dui-content p {
+    width: 135px;
+
+    font-size: 12px;
+
+    line-height: 16px;
+}
+
+
+.dui-content img {
+    width: 71px;
+
+    height: 99px;
+
+    object-fit: contain;
+}
+
+
+.dui-text {
+    font-size: 12px;
+
+    line-height: 15px;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   RED BUTTON
+========================================= */
+
+.red-button {
+    display: block;
+
+    width: fit-content;
+
+    margin-left: auto;
+
+    margin-top: 8px;
+
+    padding: 5px 10px;
+
+    background:
+        linear-gradient(
+            #d50000,
+            #a00000
+        );
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 2px 4px rgba(0,0,0,0.35);
+}
+
+
+.red-button span {
+    color: #fff !important;
+
+    margin-left: 3px;
+}
+
+
+/* =========================================
+   MIDDLE BOX
+========================================= */
+
+.middle-box {
+    border-left: 1px solid #ddd;
+
+    border-right: 1px solid #ddd;
+}
+
+
+.middle-item {
+    height: 102px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 8px 18px;
+}
+
+
+.middle-item:first-child {
+    border-bottom: 1px solid #ddd;
+}
+
+
+.middle-item h2 {
+    font-size: 18px;
+}
+
+
+.middle-item p {
+    font-size: 12px;
+
+    line-height: 15px;
+
+    margin-top: 3px;
+}
+
+
+.middle-item .red-button {
+    margin-top: 5px;
+}
+
+
+.middle-item img {
+    max-width: 110px;
+
+    max-height: 85px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   CERTIFICATE BOX
+========================================= */
+
+.certificate-box {
+    padding: 5px 18px;
+}
+
+
+.certificate-images {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+    height: 88px;
+}
+
+
+.certificate-images img:first-child {
+    width: 92px;
+
+    height: auto;
+}
+
+
+.certificate-images img:last-child {
+    width: 80px;
+
+    height: auto;
+}
+
+
+.certificate-box h2 {
+    font-size: 17px;
+
+    line-height: 17px;
+}
+
+
+.certificate-box p {
+    font-size: 12px;
+
+    line-height: 15px;
+
+    margin-top: 6px;
+}
+
+
+.certificate-box .red-button {
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.content-area {
+    display: grid;
+
+    grid-template-columns:
+        210px
+        1fr
+        170px;
+
+    gap: 25px;
+
+    padding: 28px 25px 55px;
+}
+
+
+/* =========================================
+   LEFT SIDEBAR
+========================================= */
+
+.left-sidebar h2 {
+    color: #444;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    line-height: 20px;
+
+    margin-bottom: 9px;
+}
+
+
+.left-sidebar h2 span {
+    color: #8d1111;
+}
+
+
+/* =========================================
+   PRACTICE LINKS
+========================================= */
+
+.practice-link {
+    display: block;
+
+    position: relative;
+
+    height: 52px;
+
+    margin-bottom: 9px;
+
+    padding: 8px 10px;
+
+    background:
+        linear-gradient(
+            to right,
+            #777 0%,
+            #999 100%
+        );
+
+    border-left: 6px solid #8d1111;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+.practice-link strong {
+    display: block;
+
+    font-size: 15px;
+
+    line-height: 17px;
+}
+
+
+.practice-link small {
+    display: block;
+
+    text-align: right;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    margin-top: 4px;
+}
+
+
+.practice-link small b {
+    color: #d00000;
+}
+
+
+/* =========================================
+   LEARN MORE
+========================================= */
+
+.learn-title {
+    margin-top: 31px;
+}
+
+
+.menu-area {
+    margin-top: 48px;
+
+    margin-left: 65px;
+
+    color: #ccc;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    line-height: 28px;
+}
+
+
+.menu-area span {
+    display: block;
+}
+
+
+/* =========================================
+   CENTER ARTICLE
+========================================= */
+
+.main-text {
+    padding-top: 0;
+}
+
+
+.main-text h1 {
+    color: #333;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 21px;
+
+    line-height: 24px;
+
+    margin-bottom: 11px;
+}
+
+
+.main-text h1 span {
+    color: #444;
+}
+
+
+.main-text p {
+    color: #666;
+
+    font-size: 12px;
+
+    line-height: 21px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   RIGHT SIDEBAR
+========================================= */
+
+.right-sidebar {
+    padding-top: 0;
+}
+
+
+.right-item {
+    margin-bottom: 25px;
+}
+
+
+.right-item h2 {
+    color: #444;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+
+    line-height: 17px;
+
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #999;
+}
+
+
+.right-item h2 span {
+    color: #8d1111;
+}
+
+
+.right-item p {
+    color: #555;
+
+    font-size: 12px;
+
+    line-height: 15px;
+
+    margin-top: 5px;
+}
+
+
+.side-button {
+    display: block;
+
+    width: fit-content;
+
+    margin-left: auto;
+
+    margin-top: 5px;
+
+    padding: 4px 11px;
+
+    background:
+        linear-gradient(
+            #d00000,
+            #9e0000
+        );
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 2px 4px rgba(0,0,0,0.3);
+}
+
+
+/* =========================================
+   RIGHT BADGES
+========================================= */
+
+.small-rating {
+    display: block;
+
+    width: 115px;
+
+    height: auto;
+
+    margin: 12px auto 20px;
+}
+
+
+.small-member {
+    display: block;
+
+    width: 87px;
+
+    height: auto;
+
+    margin: 0 auto 25px;
+}
+
+
+/* =========================================
+   FOLLOW US
+========================================= */
+
+.follow h2 {
+    color: #444;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #999;
+}
+
+
+.follow h2 span {
+    color: #8d1111;
+}
+
+
+.social {
+    display: flex;
+
+    justify-content: flex-start;
+
+    gap: 6px;
+
+    margin-top: 9px;
+}
+
+
+.social a {
+    display: block;
+}
+
+
+.social img {
+    width: 29px;
+
+    height: 29px;
+
+    display: block;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    height: 15px;
+
+    background:
+        url("images/ft_bg.png") repeat-x;
+
+    border-top: 5px solid #333;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .page {
+        width: 100%;
+    }
+
+
+    .header {
+        padding: 0 20px;
+    }
+
+
+    .logo {
+        width: 470px;
+    }
+
+
+    .office h3 {
+        font-size: 16px;
+    }
+
+
+    .office h1 {
+        font-size: 28px;
+    }
+
+
+    .navbar a {
+        padding: 0 9px;
+
+        font-size: 11px;
+    }
+
+
+    .content-area {
+        grid-template-columns:
+            190px
+            1fr
+            150px;
+
+        gap: 15px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    body {
+        background: #fff;
+    }
+
+
+    .header {
+        height: auto;
+
+        flex-direction: column;
+
+        padding: 10px 15px 15px;
+    }
+
+
+    .logo {
+        width: 100%;
+        height: auto;
+
+        justify-content: center;
+    }
+
+
+    .logo img {
+        max-width: 530px;
+
+        width: 100%;
+    }
+
+
+    .office {
+        text-align: center;
+
+        margin-top: 5px;
+    }
+
+
+    .office h3 {
+        font-size: 16px;
+    }
+
+
+    .office h1 {
+        font-size: 28px;
+    }
+
+
+    .navbar {
+        height: auto;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        padding: 0;
+    }
+
+
+    .navbar a {
+        min-height: 38px;
+
+        padding: 10px 9px;
+
+        font-size: 11px;
+    }
+
+
+    .top-banners {
+        grid-template-columns: 1fr;
+
+        padding: 15px;
+    }
+
+
+    .banner-left,
+    .question {
+        height: auto;
+
+        min-height: 290px;
+    }
+
+
+    .banner-left img {
+        height: auto;
+
+        object-fit: contain;
+    }
+
+
+    .three-columns {
+        grid-template-columns: 1fr;
+
+        margin: 10px 15px;
+    }
+
+
+    .dui-box,
+    .certificate-box {
+        padding: 15px;
+    }
+
+
+    .middle-box {
+        border-left: 0;
+        border-right: 0;
+
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    .content-area {
+        grid-template-columns: 1fr;
+
+        padding: 20px 15px 40px;
+    }
+
+
+    .main-text {
+        order: 1;
+    }
+
+
+    .left-sidebar {
+        order: 2;
+    }
+
+
+    .right-sidebar {
+        order: 3;
+    }
+
+
+    .menu-area {
+        margin-left: 20px;
+    }
+
+
+    .social {
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+
+    .question-heading {
+        padding-left: 155px;
+    }
+
+
+    .question-heading h2 {
+        font-size: 16px;
+    }
+
+
+    .question-heading p {
+        font-size: 10px;
+    }
+
+
+    .question form {
+        left: 12px;
+        right: 12px;
+    }
+
+
+    .form-row input {
+        width: 135px;
+    }
+
+
+    .confidential {
+        width: 105px;
+
+        top: 105px;
+
+        right: 7px;
+    }
+
+
+    .middle-item {
+        padding: 8px 10px;
+    }
+
+
+    .middle-item img {
+        max-width: 85px;
+    }
+
+
+    .main-text h1 {
+        font-size: 19px;
+    }
+
+}
