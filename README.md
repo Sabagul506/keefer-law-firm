@@ -1,0 +1,1 @@
+Keefer Law Firm Website — A responsive law firm website recreated using HTML and CSS. The project includes a professional navigation bar, hero section, case evaluation form, practice areas, law blog, case results, certificates, testimonials, and contact sections. The website is designed to be responsive across desktop, tablet, and mobile devices using CSS media queries.
